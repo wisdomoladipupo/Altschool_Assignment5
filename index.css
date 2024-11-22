@@ -1,0 +1,612 @@
+body {
+  margin: 0;
+  padding: 10rem;
+  font-family: sans-serif;
+  background: rgb(245, 248, 250);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -9rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2em;
+}
+nav ul li {
+  font-weight: bold;
+}
+
+nav ul li:nth-child(5) {
+  border: 2px solid #0a0909;
+  padding: 0.4em;
+  border-radius: 0.4em;
+}
+
+
+nav ul li a{
+  text-decoration: none;
+  color: #0a0909;
+}
+hr {
+  position: relative;
+  top: -7rem;
+  background: #ccc;
+  height: 0.1em;
+}
+ul {
+  list-style-type: none;
+}
+main {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7rem;
+}
+main section h1 {
+  font-size: 40px;
+  position: relative;
+  top: -2.7em;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+main section:nth-child(1) {
+  background: #ffffff;
+  width: 30rem;
+  height: 40rem;
+  padding: 8em;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+main section:nth-child(2) {
+  color: #ffffff;
+  background: rgb(17, 121, 191);
+  width: 15rem;
+  height: 40rem;
+  padding: 8em 4em;
+}
+
+input {
+  background: rgb(237, 239, 242);
+  outline: none;
+  border: none;
+  padding: 1em;
+  border-radius: 0.6em;
+  width: 17em;
+}
+
+::placeholder {
+  padding: 1em;
+}
+
+.form_first_row {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.first_input_row {
+  display: flex;
+  gap: 2em;
+}
+
+.first_input_row div {
+  display: flex;
+  flex-direction: column;
+}
+.email_control {
+  display: flex;
+  flex-direction: column;
+}
+.email_control input {
+  width: 27em;
+  padding: 1em;
+}
+.number_1,
+.number_2 {
+  width: 1em;
+  height: 1em;
+  padding: 0.6em;
+  border: 2px solid rgb(63, 63, 177);
+  border-radius: 6em;
+  display: flex;
+  justify-content: center;
+}
+
+.form_heading_1,
+.form_heading_2 {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.form_second_row {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+}
+.button_container {
+  display: flex;
+  align-items: center;
+  margin-top: 5em;
+}
+
+button {
+  border: none;
+  padding: 2em;
+  width: 33em;
+  height: auto;
+  border-radius: 1em;
+  margin: 1em auto;
+  font-size: 0.8em;
+  background: #038e7d;
+  color: wheat;
+}
+
+.credit_card_control {
+  display: flex;
+  flex-direction: column;
+}
+.credit_card_control span {
+  display: flex;
+}
+.credit_card_control span input:nth-child(2) {
+  width: 8em;
+  padding: 1em;
+}
+.credit_card_control span input:nth-child(3) {
+  width: 8em;
+  padding: 1em;
+}
+.credit_card_control input {
+  background: rgb(237, 239, 242);
+  outline: none;
+  border: none;
+  padding: 1em;
+  border-radius: 0.3em;
+}
+.extra_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsor_text {
+  margin: 0px auto;
+  background: #eaeced;
+  padding: 0.4em;
+  border-radius: 0.4em;
+}
+.freelancer_section {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.freelancer_section h2:nth-child(1) {
+  margin-top: -3em;
+}
+.freelancer_section h2:nth-child(2) {
+  font-size: 2.5em;
+  margin-top: -0.5em;
+}
+.freelancer_section a {
+  color: white;
+  text-wrap: nowrap;
+}
+
+.freelancer_section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.freelancer_section ul li {
+  display: flex;
+  gap: 0.2em;
+  align-items: self-start;
+  margin-left: -2.3em;
+  text-wrap: nowrap;
+}
+
+.freelancer_section ul li svg {
+  width: 1em;
+  height: 1em;
+}
+.question_span {
+  background: white;
+}
+.question_span b {
+  width: 1.2em;
+  height: 0.1em;
+  font-size: 0.8em;
+  padding: 1.1em 1.4em;
+  border: 2px solid rgb(63, 63, 177);
+  border-radius: 26em;
+}
+.client_profile {
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+  margin-right: 5em;
+  text-wrap: nowrap;
+}
+.client_profile img {
+  width: 2.3em;
+  height: 1.8em;
+  padding: 1.4em 1.4em;
+  border-radius: 75em;
+}
+
+/* css section for smaller phone screens */
+@media (max-width: 450px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    right: 16em;
+    top: -9rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 1.2em;
+  }
+  nav ul li {
+    font-weight: bold;
+    font-size: 0.5em;
+    text-wrap: nowrap;
+  }
+
+  nav ul li:nth-child(5) {
+    border: 2px solid #0a0909;
+    padding: 0.4em;
+    border-radius: 0.4em;
+  }
+
+  hr {
+    display: none;
+  }
+  ul {
+    list-style-type: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7rem;
+  }
+  main section h1 {
+    font-size: 40px;
+    position: relative;
+    top: -2.7em;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  main section:nth-child(1) {
+    order: 2;
+    background: #ffffff;
+    width: 30rem;
+    height: 40rem;
+    padding: 8em;
+    margin-left: 19em;
+  }
+
+  main section:nth-child(2) {
+    color: #ffffff;
+    background: rgb(17, 121, 191);
+    width: 30rem;
+    height: 40rem;
+    padding: 8em;
+
+    margin-left: 19em;
+  }
+
+  input {
+    background: rgb(237, 239, 242);
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-radius: 0.6em;
+    width: 17em;
+  }
+  ::placeholder {
+    padding: 1em;
+  }
+
+  .form_first_row {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .first_input_row {
+    display: flex;
+    gap: 2em;
+  }
+
+  .first_input_row div {
+    display: flex;
+    flex-direction: column;
+  }
+  .email_control {
+    display: flex;
+    flex-direction: column;
+  }
+  .email_control input {
+    width: 27em;
+    padding: 1em;
+  }
+  .number_1,
+  .number_2 {
+    width: 1em;
+    height: 1em;
+    padding: 0.6em;
+    border: 2px solid rgb(63, 63, 177);
+    border-radius: 6em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form_heading_1,
+  .form_heading_2 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .form_second_row {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+  }
+  .button_container {
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+  }
+
+  button {
+    border: none;
+    padding: 2em;
+    width: 33em;
+    height: auto;
+    border-radius: 1em;
+    margin: 1em auto;
+    font-size: 0.8em;
+    background: #038e7d;
+    color: wheat;
+  }
+
+  .credit_card_control {
+    display: flex;
+    flex-direction: column;
+  }
+  .credit_card_control span {
+    display: flex;
+  }
+  .credit_card_control span input:nth-child(2) {
+    width: 8em;
+    padding: 1em;
+  }
+  .credit_card_control span input:nth-child(3) {
+    width: 8em;
+    padding: 1em;
+  }
+  .credit_card_control input {
+    background: rgb(237, 239, 242);
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-radius: 0.3em;
+  }
+  .extra_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sponsor_text {
+    margin: 0px auto;
+    background: #eaeced;
+    padding: 0.4em;
+    border-radius: 0.4em;
+  }
+  .freelancer_section {
+    display: none;
+   
+  }
+
+ 
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -9rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2em;
+  }
+  nav ul li {
+    font-weight: bold;
+    font-size: 0.5em;
+    text-wrap: nowrap;
+  }
+
+  nav ul li:nth-child(5) {
+    border: 2px solid #0a0909;
+    padding: 0.4em;
+    border-radius: 0.4em;
+  }
+
+  hr {
+    display: none;
+  }
+  ul {
+    list-style-type: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7rem;
+  }
+  main section h1 {
+    font-size: 40px;
+    position: relative;
+    top: -2.7em;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  main section:nth-child(1) {
+    order: 2;
+    background: #ffffff;
+    width: 30rem;
+    height: 40rem;
+    padding: 8em;
+  }
+
+  main section:nth-child(2) {
+    color: #ffffff;
+    background: rgb(17, 121, 191);
+    width: 30rem;
+    height: 40rem;
+    padding: 8em;
+  }
+
+  input {
+    background: rgb(237, 239, 242);
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-radius: 0.6em;
+    width: 17em;
+  }
+  ::placeholder {
+    padding: 1em;
+  }
+
+  .form_first_row {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .first_input_row {
+    display: flex;
+    gap: 2em;
+  }
+
+  .first_input_row div {
+    display: flex;
+    flex-direction: column;
+  }
+  .email_control {
+    display: flex;
+    flex-direction: column;
+  }
+  .email_control input {
+    width: 27em;
+    padding: 1em;
+  }
+  .number_1,
+  .number_2 {
+    width: 1em;
+    height: 1em;
+    padding: 0.6em;
+    border: 2px solid rgb(63, 63, 177);
+    border-radius: 6em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form_heading_1,
+  .form_heading_2 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .form_second_row {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+  }
+  .button_container {
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+  }
+
+  button {
+    border: none;
+    padding: 2em;
+    width: 33em;
+    height: auto;
+    border-radius: 1em;
+    margin: 1em auto;
+    font-size: 0.8em;
+    background: #038e7d;
+    color: wheat;
+  }
+
+  .credit_card_control {
+    display: flex;
+    flex-direction: column;
+  }
+  .credit_card_control span {
+    display: flex;
+  }
+  .credit_card_control span input:nth-child(2) {
+    width: 8em;
+    padding: 1em;
+  }
+  .credit_card_control span input:nth-child(3) {
+    width: 8em;
+    padding: 1em;
+  }
+  .credit_card_control input {
+    background: rgb(237, 239, 242);
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-radius: 0.3em;
+  }
+  .extra_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sponsor_text {
+    margin: 0px auto;
+    background: #eaeced;
+    padding: 0.4em;
+    border-radius: 0.4em;
+  }
+  .freelancer_section {
+    display: none;
+  
+  }
+
+
+}
